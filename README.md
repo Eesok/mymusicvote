@@ -33,5 +33,5 @@ _**Post MVP Stretch Goals**_
 #### OPTIONAL Component Details
 | Models | Content | Type
 | --- | --- | :---: |
-| Video | title: String, url: String, votes{up: Number, down: Number}, genre: String, upvoted: [{ref: 'User', type: mongoose.Schema.type.ObjectId}] | MVP |
-| User | name: String, upvotes: [{ref: 'Video', type: mongoose.Schema.type.ObjectId}] | Stretch |
+| Video | title: String, url: String, votes{up: Number, down: Number}, genre: String, upvoted: {ref: 'User', type: mongoose.Schema.type.ObjectId} | MVP |
+| User | name: String, upvotes: {ref: 'Video', type: mongoose.Schema.type.ObjectId} | Stretch |
